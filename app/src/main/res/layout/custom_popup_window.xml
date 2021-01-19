@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rvPopup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_transparent">
+
+    <View
+        android:id="@+id/rr"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:background="@color/bg_transparent" />
+
+    <ImageView
+        android:id="@+id/ivDismiss"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="7dp"
+        android:src="@drawable/ic_close" />
+
+    <ImageView
+        android:id="@+id/ivMaximize"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toEndOf="@id/ivDismiss"
+        android:layout_toRightOf="@id/ivDismiss"
+        android:padding="7dp"
+        android:src="@drawable/ic_open" />
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/exoplayerView"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_below="@id/rr"
+        android:background="@color/bg_transparent"
+        app:controller_layout_id="@layout/layout_exoplayer_controller"
+        app:fastforward_increment="10000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:player_layout_id="@layout/exo_simple_player_view"
+        app:rewind_increment="10000"
+        app:use_controller="false" />
+
+
+</RelativeLayout>

@@ -1,4 +1,4 @@
-package com.logicielhouse.videoplayerclone
+package com.logicielhouse.videoplayerclone.activities
 
 import android.Manifest
 import android.content.ContentUris
@@ -20,6 +20,9 @@ import com.karumi.dexter.listener.PermissionDeniedResponse
 import com.karumi.dexter.listener.PermissionGrantedResponse
 import com.karumi.dexter.listener.PermissionRequest
 import com.karumi.dexter.listener.single.PermissionListener
+import com.logicielhouse.videoplayerclone.R
+import com.logicielhouse.videoplayerclone.models.VideoModel
+import com.logicielhouse.videoplayerclone.adapters.VideosAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.File
 import java.text.SimpleDateFormat

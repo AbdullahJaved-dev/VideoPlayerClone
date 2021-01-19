@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".VideoPlayActivity">
+    tools:context=".activities.VideoPlayActivity">
 
     <com.google.android.exoplayer2.ui.PlayerView
         android:id="@+id/exoplayerView"
@@ -17,6 +17,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:player_layout_id="@layout/exo_simple_player_view"
         app:resize_mode="fill"
+        app:controller_layout_id="@layout/layout_exoplayer_controller"
         app:rewind_increment="10000"
         app:use_controller="true" />
 

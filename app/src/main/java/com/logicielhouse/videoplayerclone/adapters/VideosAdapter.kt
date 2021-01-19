@@ -1,4 +1,4 @@
-package com.logicielhouse.videoplayerclone
+package com.logicielhouse.videoplayerclone.adapters
 
 import android.content.Context
 import android.content.Intent
@@ -9,6 +9,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.logicielhouse.videoplayerclone.R
+import com.logicielhouse.videoplayerclone.activities.VideoPlayActivity
+import com.logicielhouse.videoplayerclone.models.VideoModel
 
 /**
  * Created by Abdullah on 1/18/2021.
@@ -42,7 +45,6 @@ class VideosAdapter(private var context: Context, private val videosList: ArrayL
                 intent.putExtra("video", item.videoUri)
                 context.startActivity(intent)
             }
-
         }
     }
 

@@ -1,4 +1,4 @@
-package com.logicielhouse.videoplayerclone
+package com.logicielhouse.videoplayerclone.models
 
 import android.graphics.Bitmap
 
